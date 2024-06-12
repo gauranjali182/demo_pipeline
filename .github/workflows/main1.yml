@@ -6,3 +6,18 @@ jobs:
     steps:
       - name: my-step
         run: echo "Hello World!"
+
+  deploytodev:
+      runs-on: ubuntu-latest
+      environment-name: dev
+    steps:
+      - name: my-step
+        run: echo "Hello World!"
+  deploytoprod:
+   runs-on: ubuntu-latest
+   environment-name: prod
+    steps:
+      - name: my-step
+        run: echo "Hello World!"
+    
+
